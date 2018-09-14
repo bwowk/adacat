@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const console = require('console');
 const process = require('child_process');
 
