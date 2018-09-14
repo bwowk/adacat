@@ -1,0 +1,27 @@
+{
+  "name": "adacat",
+  "version": "1.0.0",
+  "description": "Ada the cat for everyone",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "bin": {
+    "adacat": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bwowk/adacat.git"
+  },
+  "keywords": [
+    "ada",
+    "cat",
+    "wallpaper"
+  ],
+  "author": "Bruno Wowk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bwowk/adacat/issues"
+  },
+  "homepage": "https://github.com/bwowk/adacat#readme"
+}
