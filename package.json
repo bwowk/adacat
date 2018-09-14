@@ -1,6 +1,6 @@
 {
   "name": "adacat",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Ada the cat for everyone",
   "main": "index.js",
   "scripts": {
