@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 const console = require('console');
-const process = require('child_process');
+const process = require('shell-exec')
 
-process.execSync(`
+process(`
 cp ${__dirname}/ada.jpg /tmp/ada.jpg &&
 sqlite3 ~/Library/Application\\ Support/Dock/desktoppicture.db "
     DELETE FROM data;
@@ -17,6 +17,4 @@ sqlite3 ~/Library/Application\\ Support/Dock/desktoppicture.db "
     INSERT INTO data (value) VALUES (1);
     INSERT INTO preferences (key, data_id, picture_id) VALUES (2, 2, 1);
 " && killall Dock
-`)
-console.log("Meowww!");
-
+`).then(() => console.log("Meowww!"));
